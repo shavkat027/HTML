@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: transparent;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.items{
+    border: 1px grey solid;
+    width: 80px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 2px;
+    transition: 300ms linear all;
+}
+.items:hover{
+    background-color: grey;
+}
+.action {
+    animation: color infinite 3s;
+}
+
+@keyframes color{
+    0% {
+        background-color:red;
+        background-image: pink,blue,black ;
+    }
+    50% {
+        background-color: aqua;
+        background-image: aqua,green,yellow;
+
+    }
+    100% {
+        background-color: pink;
+        background-image: grey,purple,orange;
+
+        
+    }
+}
